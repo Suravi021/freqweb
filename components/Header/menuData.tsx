@@ -1,5 +1,16 @@
 import { Menu } from "@/types/menu";
 
+interface SubmenuItem {
+  title: string;
+  path: string; 
+}
+
+interface MenuItem {
+  title: string;
+  path?: string;
+  submenu?: SubmenuItem[];
+}
+
 const menuData: Menu[] = [
   {
     id: 1,
